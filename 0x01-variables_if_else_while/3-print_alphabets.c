@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<ctype.h>
 /**
  * main - Entry point
  * Return: 0 Always (Success)
@@ -8,6 +7,7 @@ int main(void)
 {
 
 char lower, upper;
+
 upper = 'A';
 lower = 'a';
 while (lower <= 'z')
