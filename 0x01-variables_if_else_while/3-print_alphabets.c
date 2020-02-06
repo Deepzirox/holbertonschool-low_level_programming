@@ -4,22 +4,21 @@
  * main - Entry point
  * Return: 0 Always (Success)
  */
-
 int main(void)
 {
 
-char alpha = 'a';
-
-while (alpha <= 'z')
+char lower, upper;
+upper = 'A';
+lower = 'a';
+while (lower <= 'z')
 {
-putchar((int)alpha);
-alpha++;
+putchar(lower);
+lower++;
 }
-alpha = 'a';
-while (alpha <= 'z')
+while (upper <= 'Z')
 {
-putchar((int)toupper(alpha));
-alpha++;
+putchar(upper);
+upper++;
 }
 putchar('\n');
 return (0);
