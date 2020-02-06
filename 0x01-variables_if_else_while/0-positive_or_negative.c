@@ -7,19 +7,14 @@
  */
 int main(void)
 {
-srand(time(0));
-int n = rand() - RAND_MAX / 2;
-if (n > 0)
-{
-printf("%i %s \n", n, "is positive");
-}
-else if (n == 0)
-{
-printf("%i %s \n", n, "is zero");
-}
-else
-{
-printf("%i %s \n", n, "is negative");
-}
-return (0);
+	int n;
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	if (n > 0)
+	printf("%i is positive\n", n);
+	if (n < 0)
+	printf("%i is negative\n", n);
+	else
+	printf("%i is zero\n", n);
+	return (0);
 }
