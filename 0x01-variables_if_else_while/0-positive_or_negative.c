@@ -21,6 +21,5 @@ else
 {
 printf("%i %s \n", n, "is negative");
 }
-
 return (0);
 }
