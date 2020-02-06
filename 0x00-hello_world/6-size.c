@@ -4,7 +4,8 @@
  * Return: Always 0 (Success)
  */
 int main(){
-char ch = sizeof(char);
-printf("%d", ch);
+int ch = sizeof(char);
+int intVal = sizeof(intVal);
+printf("Size of a char: %d", ch);
 return (0);
 }
