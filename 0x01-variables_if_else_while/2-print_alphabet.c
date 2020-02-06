@@ -8,9 +8,10 @@ int main(void)
 
 char alpha = 'a';
 
-for (int i = alpha; alpha <= 'z'; i++)
+while (alpha <= 'z')
 {
-putchar(i);
+putchar((int) alpha);
+alpha++;
 }
 putchar('\n');
 return (0);
