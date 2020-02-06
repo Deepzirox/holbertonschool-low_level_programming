@@ -8,19 +8,19 @@
 int main(void)
 {
 
-	char alpha = 'a';
+char alpha = 'a';
 
-	while (alpha <= 'z')
-	{
-	putchar((int)alpha);
-	alpha++;
-	}
-	alpha = 'a';
-	while (alpha <= 'z')
-	{
-	putchar((int)toupper(alpha));
-	alpha++;
-	}
-	putchar('\n');
-	return (0);
+while (alpha <= 'z')
+{
+putchar((int)alpha);
+alpha++;
+}
+alpha = 'a';
+while (alpha <= 'z')
+{
+putchar((int)toupper(alpha));
+alpha++;
+}
+putchar('\n');
+return (0);
 }
