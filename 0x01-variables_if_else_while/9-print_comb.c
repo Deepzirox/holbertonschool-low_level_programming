@@ -11,9 +11,10 @@ while (asciin <= 57)
 {
 putchar(asciin);
 if (asciin != 57)
+{
 putchar(44);
-
 putchar(32);
+}
 asciin++;
 }
 putchar('\n');
