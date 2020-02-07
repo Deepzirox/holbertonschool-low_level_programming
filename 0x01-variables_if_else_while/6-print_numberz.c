@@ -5,12 +5,12 @@
 */
 int main(void)
 {
-int num;
-num = 0;
-while (num < 10)
+int ascii;
+ascii = 48;
+while (ascii <= 57)
 {
-printf("%i", num);
-num++;
+putchar((int)ascii);
+ascii++;
 }
 putchar('\n');
 return (0);
