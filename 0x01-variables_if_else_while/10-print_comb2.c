@@ -8,9 +8,9 @@ int main(void)
 int iterator;
 while (iterator < 100)
 {
-putchar((iterator/10)+'0');
-putchar((iterator%10)+'0');
-if(iterator != 99)
+putchar((iterator / 10) + '0');
+putchar((iterator % 10) + '0');
+if (iterator != 99)
 {
 putchar(44);
 putchar(32);
