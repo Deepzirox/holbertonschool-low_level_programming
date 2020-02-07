@@ -15,5 +15,6 @@ putchar((int)lower);
 }
 lower++;
 }
+putchar('\n');
 return (0);
 }
