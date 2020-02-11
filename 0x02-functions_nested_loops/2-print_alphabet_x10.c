@@ -4,9 +4,12 @@
  */
 void print_alphabet_x10(void)
 {
-	for (int cicle = 0; cicle < 10; cicle++)
+	int cicle;
+	char ch;
+
+	for (cicle = 0; cicle < 10; cicle++)
 	{
-		for (int ch = 'a'; ch <= 'z'; ch++)
+		for (ch = 'a'; ch <= 'z'; ch++)
 		{
 			_putchar(ch);
 		}
