@@ -4,8 +4,6 @@
  * main- Entry point for app
  * Return: 0 Always (Success)
  */
-
-
 int main(void)
 {
 	char hol[9] = "Holberton";
