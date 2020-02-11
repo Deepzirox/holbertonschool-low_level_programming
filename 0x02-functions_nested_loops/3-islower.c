@@ -20,6 +20,6 @@ int _islower(int c)
 			res = 1;
 		}
 	}
-	return (return_result);
+	return (res);
 
 }
