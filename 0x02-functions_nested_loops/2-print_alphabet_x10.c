@@ -1,6 +1,13 @@
-#include<stdio.h>
+#include <stdio.h>
 #include "holberton.h"
-void print_alphabetx10(void)
+void print_alphabet_x10(void)
 {
-_putchar(88);
+	for(int cicle = 0; cicle < 10; cicle++)
+	{
+		for(int ch = 'a'; ch <= 'z'; ch++)
+		{
+			_putchar(ch);
+		}
+		_putchar('\n');
+	}
 }
