@@ -1,13 +1,15 @@
 #include "holberton.h"
 /**
  * print_alphabet - print char a to z
- * Return: None, 1 if error
+ * Return: void
  */
 void print_alphabet(void)
 {
-	for (int ch = 'a'; ch <= 'z'; ch++)
+	char abc;
+
+	for (abc = 'a'; abc <= 'z'; abc++)
 	{
-		_putchar(ch);
+		_putchar(abc);
 	}
 	_putchar('\n');
 }
