@@ -9,15 +9,15 @@ int _islower(int c)
 {
 	char lower;
 	char value;
-	int return_result;
+	int res;
 
 	value = c;
-	return_result = 0;
+	res = 0;
 	for (lower = 'a'; lower <= 'z'; lower++)
 	{
 		if (lower == value)
 		{
-			return_result = 1;
+			res = 1;
 		}
 	}
 	return (return_result);
