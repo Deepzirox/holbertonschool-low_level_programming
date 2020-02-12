@@ -5,22 +5,12 @@
  */
 int _abs(int n)
 {
-
-	int inc;
-	int abstract;
-
-	inc = 0;
 	if (n < 0)
 	{
-		for (int i = 0; i > n; i--)
-		{
-			inc++;
-		}
-		abstract = inc;
+		return (n *= -1);
 	}
 	else
 	{
-		abstract = n;
+		return (n);
 	}
-	return (abstract);
 }
