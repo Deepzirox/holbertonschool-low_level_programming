@@ -9,7 +9,11 @@ int print_last_digit(int n)
 	int res;
 	char resc;
 
-	res = _abs((n % 10));
+	res = (n % 10);
+	if (res < 0)
+	{
+		res *= -1;
+	}
 	resc = res + 48;
 	_putchar(resc);
 	return (res);
