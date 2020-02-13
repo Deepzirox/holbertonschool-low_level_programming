@@ -7,5 +7,8 @@ include "holberton.h"
  */
 int add(int num1, int num2)
 {
-	return (num1 + num2);
+	int plus;
+
+	plus = num1 + num2;
+	return (plus);
 }
