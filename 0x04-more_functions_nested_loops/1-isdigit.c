@@ -14,7 +14,7 @@ int _isdigit(int c)
 	{
 		if (value == c)
 		{
-			res = 1;	
+			res = 1;
 		}
 	}
 
