@@ -7,8 +7,6 @@ int main(void)
 {
 	int x, b, mthree, mfive, fizz, buzz;
 
-	mfive = 0;
-	mthree = 0;
 	for (x = 1; x <= 100; x++)
 	{
 		fizz = 0;
@@ -28,20 +26,22 @@ int main(void)
 		}
 		if ((fizz == 1) && (buzz == 1))
 		{
-			printf("%s ", "FizzBuzz");
+			printf("%s", "FizzBuzz");
 		}
 		if ((fizz == 1) && (buzz == 0))
 		{
-			printf("%s ", "Fizz");
+			printf("%s", "Fizz");
 		}
 		if ((buzz == 1) && (fizz == 0))
 		{
-			printf("%s ", "Buzz");
+			printf("%s", "Buzz");
 		}
 		if ((buzz == 0) && (fizz == 0))
 		{
-			printf("%i ", x);
+			printf("%i", x);
 		}
+		if (x != 100)
+		putchar(' ');
 	}
 	putchar('\n');
 	return (0);
