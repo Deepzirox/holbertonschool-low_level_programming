@@ -1,13 +1,13 @@
 #include "holberton.h"
 /**
- * print_line - print the number of lines given by n
- * @n: number of lines to print
+ * print_diagonal - print a diagonal given by n
+ * @n: integer
  * Return: void
  */
 
 void print_diagonal(int n)
 {
-	int spaces,ss;
+	int spaces, ss;
 
 	if (n <= 0)
 	{
