@@ -21,23 +21,28 @@ int main(void)
 			{
 				fizz = 1;
 			}
-			else if (x == mfive)
+			if (x == mfive)
 			{
 				buzz = 1;
 			}
 		}
-		if (fizz == 1)
+		if ((fizz == 1) && (buzz == 1))
+		{
+			printf("%s ", "FizzBuzz");
+		}
+		if ((fizz == 1) && (buzz == 0))
 		{
 			printf("%s ", "Fizz");
 		}
-		else if (buzz == 1)
+		if ((buzz == 1) && (fizz == 0))
 		{
 			printf("%s ", "Buzz");
 		}
-		else
+		if ((buzz == 0) && (fizz == 0))
 		{
 			printf("%i ", x);
 		}
 	}
+	putchar('\n');
 	return (0);
 }
