@@ -1,5 +1,9 @@
 #include "holberton.h"
-
+/**
+ * rev_string - reverse a string of char
+ * @s: string
+ * Return: void
+ */
 void rev_string(char *s)
 {
 	char rev[1000];
