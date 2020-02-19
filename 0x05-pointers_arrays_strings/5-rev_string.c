@@ -21,7 +21,7 @@ void rev_string(char *s)
 	}
 	for (point = lenght - 1; point >= 0; point--)
 	{
-		s[c2] = handler[point];
+		s[point] = handler[c2];
 		c2++;
 	}
 }
