@@ -14,7 +14,7 @@ void rev_string(char *s)
 		aux[r] = s[r];
 	}
 	r -= 1;
-	for (r2 = r; r2 >= 0; r2--)
+	for (r2 = r; r2 > 0; r2--)
 	{
 		s[handler] = aux[r2];
 		handler++;
