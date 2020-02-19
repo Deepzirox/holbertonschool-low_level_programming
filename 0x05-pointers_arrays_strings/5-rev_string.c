@@ -6,17 +6,23 @@
  */
 void rev_string(char *s)
 {
-	char aux[1000];
-	int r, r2, handler;
+	char handler[1000];
+	int c1, c2, lenght, point;
 
-	for (r = 0; s[r] != '\0'; r++)
+	c2 = 0;
+	lenght = 0;
+	point = 0;
+
+	while (s[c1] != '\0')
 	{
-		aux[r] = s[r];
+		handler[c1] = s[c1];
+		c1++;
+		lenght++;
 	}
-	r -= 1;
-	for (r2 = r; r2 > 0; r2--)
+	lenght--;
+	for (point = lenght; point >= 0; point--)
 	{
-		s[handler] = aux[r2];
-		handler++;
+		s[c2] = handler[point];
+		c2++;
 	}
 }
