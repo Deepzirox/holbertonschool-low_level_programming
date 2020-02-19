@@ -4,7 +4,6 @@
  * @s: string
  * Return: void
  */
-
 void rev_string(char *s)
 {
 	char aux[1000];
