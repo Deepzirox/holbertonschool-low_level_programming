@@ -1,6 +1,10 @@
 #include "holberton.h"
-
-
+/**
+ * _strncat - cat string
+ * @dest: destiny string
+ * @src: src string
+ * Return: string
+ */
 char *_strncat(char *dest, char *src, int n)
 {
 
