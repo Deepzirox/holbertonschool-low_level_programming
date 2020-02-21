@@ -10,7 +10,7 @@ int _strcmp(char *s1, char *s2)
 
 	int df;
 
-	while (s1[df] != '\0' s2[df] != '\0')
+	while (s1[df] != '\0' && s2[df] != '\0')
 	{
 		if (s1[df] != s2[df])
 		{
