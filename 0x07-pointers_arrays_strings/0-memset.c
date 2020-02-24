@@ -1,5 +1,11 @@
 #include "holberton.h"
-
+/**
+ * _memset - function
+ * @s: string
+ * @b: char
+ * @n: number
+ * Return: new string
+ */
 char *_memset(char *s, char b, unsigned int n)
 {
 	unsigned int x;
@@ -8,7 +14,5 @@ char *_memset(char *s, char b, unsigned int n)
 	{
 		s[x] = b;
 	}
-
-
 	return (s);
 }
