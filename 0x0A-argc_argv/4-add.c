@@ -34,12 +34,12 @@ int main(int argc, char *argv[])
 {
 
 	int i, res2 = 0;
-	char *tmp;
-
+	char *tmp = 0;
+	
 	argv++;
 	if (argc > 0)
 	{
-		for (i = 0; i < argc - 1; i++, argv++)
+	  for (i = 0; i < (argc - 1); i++, argv++)
 		{
 			tmp = *argv;
 			for (; *tmp != '\0'; tmp++)
