@@ -36,7 +36,7 @@ void sum(char **ch, char *tmp, int *res)
 	if (validator == 0)
 	{
 		printf("Error\n");
-		exit(0);
+			
 	}
 	else
 	{
