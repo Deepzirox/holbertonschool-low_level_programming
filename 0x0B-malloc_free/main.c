@@ -39,7 +39,7 @@ int main(void)
 {
     char *buffer;
 
-    buffer = create_array(0, 'H');
+    buffer = create_array(120, 'a');
     if  (buffer == NULL)
     {
         printf("failed to allocate memory\n");
