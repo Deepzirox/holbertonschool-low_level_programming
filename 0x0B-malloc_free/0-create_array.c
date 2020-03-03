@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include <stdlib.h>
 /**
  * create_array - create array in memory
