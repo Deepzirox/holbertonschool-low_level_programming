@@ -26,13 +26,12 @@ char *str_concat(char *s1, char *s2)
 	int memory, i2, i3, len1, len2;
 	char *str;
 
-	if (s1 == NULL || s2 == NULL)
-		return (NULL);
-
-	len1 = len(s1);
-	len2 = len(s2);
+	len1 = (s1 != NULL) ? len(s1) : 0;
+	len2 = (s2 != NULL) ? len(s2) : 0;
 	memory = len1 + len2;
 	str = malloc((memory + 1) * sizeof(char));
+	if (str == NULL)
+		return (NULL);
 	for (i2 = 0; i2 < len1; i2++)
 		str[i2] = s1[i2];
 	i2 = 0;
