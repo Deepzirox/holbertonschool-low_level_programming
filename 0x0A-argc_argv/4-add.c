@@ -1,25 +1,6 @@
 #include <stdio.h>
+#include <ctype.h>
 #include <stdlib.h>
-/**
- * _isdigit - check if a char is uppercase
- *@c: char to check
- * Return: 1 (uppercase), 0 (otherwise)
- */
-int _isdigit(int c)
-{
-	int value, res;
-
-	res = 0;
-	for (value = '0'; value <= '9'; value++)
-	{
-		if (value == c)
-		{
-			res = 1;
-		}
-	}
-
-	return (res);
-}
 /**
  * sum - validate char and add
  * @ch: char to evaluate
@@ -31,12 +12,12 @@ void sum(char **ch, char *tmp, int *res)
 {
 	char tm = **ch;
 
-	int validator = _isdigit(tm);
+	int validator = isdigit(tm);
 
 	if (validator == 0)
 	{
 		printf("Error\n");
-			
+		exit(0);
 	}
 	else
 	{

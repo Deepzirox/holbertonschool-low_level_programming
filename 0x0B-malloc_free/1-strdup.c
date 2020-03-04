@@ -11,6 +11,9 @@ char *_strdup(char *str)
 	char *aux;
 	int counter = 0, i;
 
+	if (str == NULL)
+		return (NULL);
+
 	while (str[counter] != '\0')
 		counter++;
 
