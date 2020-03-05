@@ -30,9 +30,10 @@ void clean(char *thrash, int lenght)
 	free(thrash);
 }
 /**
- * string_concat - concatenate two strings
+ * string_nconcat - concatenate two strings
  * @s1: dest string
  * @s2: source string
+ * @n: bytes to allocate
  * Return: pointer to string
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
