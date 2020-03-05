@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "holberton.h"
 /**
  * _calloc - allocate memory
  * @nmemb: elements
@@ -14,10 +15,11 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 
-	mem = malloc(nmemb * size);
-	if (mem == NULL)
+	aux = malloc(nmemb * size);
+	if (aux == NULL)
 		return (NULL);
 
-	aux =  mem;
-	return (aux);
+	mem = aux;
+
+	return (mem);
 }
