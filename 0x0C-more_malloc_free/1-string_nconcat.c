@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "holberton.h"
 /**
  * len - get lenght of string
  * @str: string
@@ -14,20 +13,6 @@ int len(char *str)
 		counter++;
 
 	return (counter);
-}
-/**
- * clean - clean memory allocation
- * @thrash: memory allocated
- * @lenght: lenght of memory
- * Return: void
- */
-void clean(char *thrash, int lenght)
-{
-	for (int clean = 0; clean < lenght; clean++)
-	{
-		free(&thrash[clean]);
-	}
-	free(thrash);
 }
 /**
  * string_nconcat - concatenate two strings
@@ -52,7 +37,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	output = malloc((memory + 1) * sizeof(char));
 	if (output == NULL)
 	{
-		clean(output, memory);
 		return (NULL);
 	}
 	for (x = 0; x < len1; x++)
@@ -60,6 +44,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	for (z = x; z < memory; z++, v++)
 		output[z] = s2[v];
+
+	output[memory] = '\0';
 
 	return (output);
 }
