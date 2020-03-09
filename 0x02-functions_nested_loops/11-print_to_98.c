@@ -6,10 +6,16 @@
  */
 void print_to_98(int n)
 {
-	int i;
+	int i, limit = 98;
 
-	for (i = 0; i < n; i++)
+	for (i = n; i <= limit; i++)
 	{
-		printf("%i ", i);
+		printf("%i",i);
+		if (i != limit - 1)
+		{
+			putchar(',');
+		}
+		putchar(' ');
 	}
+	putchar('\n');
 }
