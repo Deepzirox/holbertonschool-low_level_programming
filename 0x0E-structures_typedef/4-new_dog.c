@@ -45,7 +45,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	new_pet->name = allocate(name);
 	new_pet->owner = allocate(owner);
-	if (new->name == 0 || new->owner == 0)
+	if (new_pet->name == 0 || new_pet->owner == 0)
 	{
 		free(new_pet->name);
 		free(new_pet->owner);
