@@ -2,22 +2,18 @@
 #include <stdlib.h>
 #include "lists.h"
 /**
- * add_nodeint - get number of nodes
+ * free_listint - free list
  * @head: head
- * @n: number to put as node data
- * Return: New node address
+ * Return: void
  */
 void free_listint(listint_t *head)
 {
-  while (1)
-  {
-    if (head != NULL)
-    {
-      head = head->next;
-    }
-    else
-    {
-      free(head);
-    }
-  }
+	if (head != NULL)
+		return;
+
+	while (head != NULL)
+	{
+		free(head);
+		head = (*head).next;
+	}
 }
