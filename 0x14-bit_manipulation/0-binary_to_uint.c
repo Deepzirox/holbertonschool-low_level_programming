@@ -7,16 +7,13 @@
 	*/
 int _isdigit(const char *c)
 {
-	int value, value2, res = 1;
+	int value, res = 1;
 
 	for (value = 0; c[value] != '\0'; value++)
 	{
-		for (value2 = 'a'; value2 <= 'z'; value2++)
+		if (c[value] != '0' && c[value] != '1')
 		{
-			if (c[value] == value2)
-			{
-				return (0);
-			}
+			return (0);
 		}
 	}
 
