@@ -47,7 +47,7 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int res = 0;
 	int check;
 
-	if (!b)
+	if (b == NULL)
 		return (0);
 
 	check = _isdigit(b);
