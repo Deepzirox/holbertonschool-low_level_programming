@@ -7,7 +7,7 @@
 	*/
 int get_bit(unsigned long int n, unsigned int index)
 {
-	int i, bin, boolean = 0, c = 0;
+	int i, bin, boolean = 0;
 
 	if (index > sizeof(n) * 8)
 		return (-1);
@@ -19,11 +19,8 @@ int get_bit(unsigned long int n, unsigned int index)
 
 		if (boolean)
 		{
-			c++;
 			if (i - 1 == 0)
 			{
-				if (index > (unsigned int)c)
-					return (-1);
 				bin = n >> index;
 				return ((bin & 1) ? 1 : 0);
 			}
