@@ -9,6 +9,8 @@ int get_bit(unsigned long int n, unsigned int index)
 {
 	int i, bin, boolean = 0, c = 0;
 
+	if (index > sizeof(n) * 8)
+		return (-1);
 	for (i = 63; i >= 0; i--)
 	{
 		bin = n >> i;
