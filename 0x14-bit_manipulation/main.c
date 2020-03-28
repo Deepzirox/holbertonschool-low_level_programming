@@ -1,6 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 #include "holberton.h"
 
 /**
@@ -10,22 +8,16 @@
  */
 int main(void)
 {
-    int n;
-    time_t t;
-    int ranval, indval;
+    unsigned long int n;
 
-    n = 5;
-
-   /* Intializes random number generator */
-   srand((unsigned) time(&t));
-
-    for (int test = 0; test < 99; test++)
-    {
-      ranval = rand() % 100;
-      indval = rand() % 40;
-      n = get_bit(ranval, indval);
-      printf("En el valor %d busca el indice %d que es igual a = %d\n", ranval, indval, n);
-    }
-
+    n = 1024;
+    set_bit(&n, 5);
+    printf("%lu\n", n);
+    n = 0;
+    set_bit(&n, 10);
+    printf("%lu\n", n);
+    n = 98;
+    set_bit(&n, 0);
+    printf("%lu\n", n);
     return (0);
 }
