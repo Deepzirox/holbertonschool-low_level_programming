@@ -38,11 +38,14 @@ int create_file(const char *filename, char *text_content)
 		write(STDOUT_FILENO, "Fails", 6);
 		return (-1);
 	}
-	n = write(fd, text_content, len(text_content));
-	if (n == -1)
+	if (text_content != NULL)
 	{
-		write(STDOUT_FILENO, "Fails", 6);
-		return (-1);
+		n = write(fd, text_content, len(text_content));
+		if (n == -1)
+		{
+			write(STDOUT_FILENO, "Fails", 6);
+			return (-1);
+		}
 	}
 	close(fd);
 	return (1);
