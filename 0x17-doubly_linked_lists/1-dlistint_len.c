@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "lists.h"
 /**
- * dlistint_len- get number of elements
+ * dlistint_len - get number of elements
  * @h: head of list
  * Return: Number of nodes
  */
