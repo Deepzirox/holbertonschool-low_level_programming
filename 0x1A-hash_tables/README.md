@@ -1,0 +1,1 @@
+Directory for practice in hash tables in C
