@@ -9,8 +9,11 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 {
 	unsigned long int k;
 
-	k = key_index((unchar)key, ht->size);
-	
+	if (ht != NULL)
+		k = key_index((unchar)key, ht->size);
+	else
+		return (NULL);
+
 	if (ht->array[k] == NULL)
 		return (NULL);
 
