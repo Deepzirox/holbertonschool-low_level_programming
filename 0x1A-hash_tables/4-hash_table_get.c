@@ -19,6 +19,6 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 
 	if (hash_djb2((unchar)ht->array[k]->key) == hash_djb2((unchar)key))
 		return (ht->array[k]->value);
-
-	return (NULL);
+	else
+		return (NULL);
 }
