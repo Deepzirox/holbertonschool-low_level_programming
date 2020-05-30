@@ -13,8 +13,11 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 		k = key_index((unchar)key, ht->size);
 	else
 		return (NULL);
+	
+	if (key == NULL)
+		return (NULL);
 
-	if (ht->array[k] == NULL || key == NULL)
+	if (ht->array[k] == NULL)
 		return ("(null)");
 
 	if (hash_djb2((unchar)ht->array[k]->key) == hash_djb2((unchar)key))
