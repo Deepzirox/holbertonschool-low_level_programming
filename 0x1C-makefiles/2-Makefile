@@ -1,8 +1,8 @@
-SRC=holberton.c main.c
 CC=gcc
+SRC=main.c holberton.c
+OBJ=$(SRC:%.c=%.o)
 NAME=holberton
 
-all: $(SRC) $(NAME)
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
 
-$(NAME): $(OBJ)
-    $(CC) -pedantic -Wall -Werror -Wextra $(OBJ) -o $@
