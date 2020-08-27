@@ -27,9 +27,9 @@ void printer(int *array, int l, int r)
  */
 int binary_search(int *array, size_t size, int value)
 {
-	int l, r, mid;
+	int l = 0, r = size, mid = (size - 1) / 2;
 
-	for (l = 0, mid = (size - 1) / 2, r = size; r > l;)
+	for (; r > l;)
 	{
 		printer(array, l, r);
 		if (array[mid] == value)
